@@ -1,0 +1,15 @@
+.fundo{
+    background-image: url(img/fundoclaro.png);
+}
+
+.lampada{
+    margin-left: 45%;
+}
+
+.botao{
+    background-color: #f0e057;
+    margin-left: 46%;
+    font-size: 16px;
+    padding: 14px 40px;
+    border-radius: 12px;
+}
