@@ -1,0 +1,28 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo 2</title>
+</head>
+<body>
+    <script>
+        var numeros = [5, 8, 10, 4]
+        console.log(numeros) //4
+
+        //document.write(numeros)
+        var tamanho = numeros.length
+        console.log('tamanho do vetor: ',tamanho)
+        for(var i = 0; i < tamanho; i++){
+        console.log('valor do i: ', i, 'conteudo: ', numeros[i])
+        }
+        console.log('**********************')
+        for(var i in numeros){
+            console.log('valor do i: ', i, 'conteudo: ', numeros[i])
+        }
+        console.log(numeros.indexOf(10))
+
+    </script>
+</body>
+</html>
