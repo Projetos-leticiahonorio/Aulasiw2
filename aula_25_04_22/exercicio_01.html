@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de Verificação de Nacionalidade</h1>
+
+    <p>Digite o seu pais de nascença: <input type="text" name="tex" id="tex"></p>
+    <input type="button" value="VERIFICAR" onclick="nacionali()">
+    <div id="resultado"></div>
+
+    <script>
+        function nacionali(){
+            var texto = document.querySelector('input#tex')
+            var res = document.querySelector('div#resultado')
+            var pais = Text(tex.value)
+
+            if (pais == 'BRA'){
+                res.innerHTML += `<p>Voce é <strong>BRASILEIRO</strong></p>`
+        }
+            else{
+                res.innerHTML += `<p>Voce é <strong>ESTRANGEIRO</strong></p>`
+        }
+
+    }
+     
+    </script>
+</body>
+</html>
