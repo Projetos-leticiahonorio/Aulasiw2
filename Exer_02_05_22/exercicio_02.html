@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 2</title>
+</head>
+
+<body>
+    <script>
+        var salario = Number(prompt('Digite seu salarioário: '))
+
+        if (salario < 280) {
+            var por = salario * 0.2
+            var total = salario + por
+
+            alert(`Seu salario era de R$${salario} \nFoi aplicada uma porcentagem de 20% \nAumentou em R$${por} \nSeu novo salarioário é de R$${total}`)
+        }
+        else {
+            if ((salario >= 280) && (salario < 700)) {
+                var por = salario * 0.15
+                var total = salario + por
+
+                alert(`Seu salarioário era de R$${salario} \nFoi aplicada uma porcentagem de 15% \nAumentou em R$${por} \nSeu novo salarioário é de R$${total}`)
+            }
+            else {
+                if ((salario >= 700) && (salario < 1500)) {
+                    var por = salario * 0.10
+                    var total = salario + por
+
+                    alert(`Seu salarioário era de R$${salario} \nFoi aplicada uma porcentagem de 10% \nAumentou em R$${por} \nSeu novo salarioário é de R$${total}`)
+                }
+                else {
+                    if (salario >= 1500) {
+                        var por = salario * 0.05
+                        var total = salario + por
+
+                        alert(`Seu salarioário era de R$${salario} \nFoi aplicada uma porcentagem de 5% \nAumentou em R$${por} \nSeu novo salarioário é de R$${total}`)
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
