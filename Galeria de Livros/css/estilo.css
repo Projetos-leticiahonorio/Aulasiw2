@@ -1,0 +1,28 @@
+.h1{
+    text-align: center;
+    color: #8B2323;
+    margin: 30px;
+    font-family: FreeMono, monospace;
+}
+
+.paragrafo{
+    text-align: center;
+    color: black;
+}
+
+.papagaio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.col-md-4{
+    margin-top: 15px;
+}
+
+.book{
+    background-color: #EE9572;
+}
