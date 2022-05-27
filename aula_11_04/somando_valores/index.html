@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>somando os valores</title>
+</head>
+<body>
+    <div class="fundo">
+
+        <h1 class="titulo">SOMANDO VALORES</h1>
+        <input type="number" name="n1" id="n1">
+        <input type="number" name="n2" id="n2">
+        <input type="button" value="somar" onclick="somar()">
+        <input type="button" value="subtrair" onclick="subtrair()">
+        <input type="button" value="divisão" onclick="divisao()">
+        <input type="button" value="multiplicação" onclick="multiplicacao()">
+        <div><br></div>
+        <div id="resultado">RESULTADO</div> 
+
+    </div>
+
+        <script>
+            function somar() {
+                var n1 = document.getElementById('n1')
+                var n2 = document.getElementById('n2')
+                var res = document.getElementById('resultado')
+                var num1 = Number(n1.value)
+                var num2 = Number(n2.value)
+                var soma = num1 + num2
+
+                res.innerText = `A Soma de ${num1} + ${num2} é ${soma}`
+            }
+
+            function subtrair(){
+                var n1 = document.getElementById('n1')
+                var n2 = document.getElementById('n2')
+                var res = document.getElementById('resultado')
+                var num1 = Number(n1.value)
+                var num2 = Number(n2.value)
+                var subtra = num1- num2
+
+                res.innerText = `A Subtração de ${num1} + ${num2} é ${subtra}`
+            }
+
+            function divisao(){
+                var n1 = document.getElementById('n1')
+                var n2 = document.getElementById('n2')
+                var res = document.getElementById('resultado')
+                var num1 = Number(n1.value)
+                var num2 = Number(n2.value)
+                var divi = num1/num2
+
+                res.innerText = `A Divisão de ${num1} + ${num2} é ${divi}`
+            }
+
+            function multiplicacao(){
+                var n1 = document.getElementById('n1')
+                var n2 = document.getElementById('n2')
+                var res = document.getElementById('resultado')
+                var num1 = Number(n1.value)
+                var num2 = Number(n2.value)
+                var multi = num1*num2
+
+                res.innerText = `A Multiplicação de ${num1} + ${num2} é ${multi}`
+            }
+        </script>
+</body>
+</html>
