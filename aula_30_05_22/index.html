@@ -5,21 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <link rel="shortcut icon" href="img/favicon.png">
-    <title>Desafio</title>
+    <title>Exercício</title>
 </head>
-<body  class="fundo">
-    <div class="teste">
-        <h1 class="titulo">Identificador de Pessoas!!</h1>
-        <p class="paragrafo">Digite o ano de nascimento: <input type="number"  id="ano"></p>
-        <p class="paragrafo">Escolha o sexo:
-            <input  type="radio" name="sex" id="sex" value="Masculino">
-            <label for="masc">Masculino</label>
-            <input  type="radio" name="sex" id="sex" value="Feminino">
-            <label for="fem">Feminino</label>
-        </p>
-        <input class="botao" id="calular" type="button" value="Calcular">
-        <script src="script.js"></script>
+<body class="fundo">
+        <form action="script.js" method="post">
+            <h1 class="titulo">Em que ano você nasceu?</h1>
+                <input type="number" name="ano" id="ano">
+            <br>
+            <h1 class="titulo">Qual o seu sexo?</h1>
+                <input type="radio" id="sexo" name="sexo" value="Masculino">
+                <label class="paragrafo">Masculino</label><br>
+                <input type="radio" id="sexo" name="sexo" value="Feminino">
+                <label class="paragrafo">Feminino</label><br>
+            <br>
+                <input class="botao" type="button" id="calcular" value="calcular" onclick="calcular()"> 
+        </form>
+        
+    <div id="resultado">
+        <h1  class="titulo" id="textoresultado"></h1>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
